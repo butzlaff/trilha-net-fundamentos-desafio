@@ -33,12 +33,12 @@ namespace DesafioFundamentos.Models
                 int horas = 0;
                 try
                 {
-                    int value = int.Parse(Console.ReadLine());
-                    horas = value;
+                    horas = int.Parse(Console.ReadLine());
                 } catch (Exception ex)
                 {
                     Console.WriteLine("Valor inválido");
                 }
+
                 decimal valorTotal = precoInicial + precoPorHora * horas;
 
                 try
